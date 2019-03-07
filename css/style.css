@@ -1,0 +1,152 @@
+h2.nav-tab-wrapper {
+	margin:22px 0 0 0;
+}
+
+#sections {
+	padding:22px;
+	background: #fff;
+	border:1px solid #ccc;
+	border-top:0px;
+}
+
+section {
+	display:none;
+}
+
+section:first-child {
+	display:block;
+}
+
+
+.no-js h2.nav-tab-wrapper {
+	display:none;
+}
+
+.no-js #sections {
+	border-top:1px solid #ccc;
+	margin-top:22px;
+}
+
+.no-js section {
+	border-top: 1px dashed #aaa;
+	margin-top:22px;
+	padding-top:22px;
+}
+
+.no-js section:first-child {
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+
+.cards {
+	border: solid 1px rgba(136, 136, 136, 0.692);
+	border-radius: 5px;
+	padding: 20px;
+	margin: 20px 15px;
+	color: #333;
+	font-size: 20px;
+}
+
+.flex {
+	display: flex;
+   	flex-flow: wrap;
+}
+
+.flex > div {
+	flex: 1;
+}
+
+.ml-15 {
+	margin-left: 15px;
+}
+
+.hndle a, .widefat tfoot td, .widefat th, .widefat thead td {
+	font-weight: 600 !important;
+}
+
+th:first-child {
+	width: 5% !important;
+}
+
+h2 {
+	font-size: 22px !important;
+}
+
+#table_general {
+	display: table;
+	border-collapse: separate;
+	border-spacing: 10px;
+	border-color: gray;
+}
+
+.chosen-container .chosen-results li,
+.chosen-container-single .chosen-single span {
+	text-transform: capitalize;
+}
+
+/* table#flextable { width: 100%; }
+
+#flextable th, #flextable td { 
+  text-align: left; 
+  padding: 0.25em;
+}
+
+#flextable tr { 
+  border-bottom: 1px solid #DDD;
+} */
+
+#flextable {
+	margin-top: 50px;
+  	border-collapse: collapse;
+}
+
+#flextable th {
+	text-transform: capitalize
+}
+
+/*
+
+#flextable td, #flextable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#flextable tr:nth-child(even){background-color: #f2f2f2;}
+
+#flextable tr:hover {background-color: #ddd;}
+
+#flextable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #555;
+  color: white;
+}
+
+
+@media screen and (max-width: 800px) {
+  #flextable tr { 
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0.5em 0;
+    border: 1px solid rgba(3,3,3,0.2);
+  }
+  #flextable td, th {
+    flex: 1 1 150px;
+    border: 0.5px solid rgba(3,3,3,0.2);
+  }
+} */
+
+
+.table-width {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 50px;
+}
+
+#exporttocsv {
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
