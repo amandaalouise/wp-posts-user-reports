@@ -96,12 +96,14 @@ h2 {
   border-bottom: 1px solid #DDD;
 } */
 
-#flextable {
+#flextable,
+#usertable {
 	margin-top: 50px;
   	border-collapse: collapse;
 }
 
-#flextable th {
+#flextable th,
+#usertable th {
 	text-transform: capitalize
 }
 
@@ -146,7 +148,8 @@ h2 {
 	padding-bottom: 50px;
 }
 
-#exporttocsv {
+#exporttocsv,
+#user_exporttocsv {
 	margin-top: 25px;
 	margin-bottom: 20px;
 }

@@ -167,3 +167,41 @@ function getUserFields()
 
     die();
 }
+
+add_action('wp_ajax_nopriv_getUserFieldsData', 'getUserFieldsData');
+add_action('wp_ajax_getUserFieldsData', 'getUserFieldsData');
+function getUserFieldsData()
+{
+
+    $user_role = $_POST['user_role'];
+
+    $users = getUsers($user_role);
+
+    $user_fields = $_POST['user_fields'];
+
+    $returnedData = [];
+
+    foreach ($users as $user) {
+
+        $genericArray;
+
+        $user_id = (int) $user['ID'];
+        $user_obj = get_userdata($user_id);
+
+        foreach ($user_fields as $field) {
+            if (metadata_exists('user', $user_id, $field)) {
+                $genericArray[$field] = get_user_meta($user_id, $field);
+            } else {
+                $genericArray[$field] = $user_obj->{$field};
+            }
+
+        }
+
+        array_push($returnedData, $genericArray);
+
+    }
+
+    echo json_encode($returnedData);
+
+    die();
+}

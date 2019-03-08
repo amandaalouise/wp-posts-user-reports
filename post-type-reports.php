@@ -41,6 +41,7 @@ class Reports
         wp_enqueue_script('script', plugins_url('/js/scripts.js', __FILE__));
         wp_enqueue_script('user-script', plugins_url('/js/user-scripts.js', __FILE__));
         wp_enqueue_script('chosen', plugins_url('/js/chosen.jquery.min.js', __FILE__));
+        wp_enqueue_script('general-script', plugins_url('/js/general-scripts.js', __FILE__));
     }
 
     public function register()

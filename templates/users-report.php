@@ -30,7 +30,21 @@
 	</tr>
 	<tr>
 		<td>
-			<button type="button" id="get_data" class="button-primary" style="margin-top: 25px;">Buscar Dados</button>
+			<button type="button" id="get_userdata" class="button-primary" style="margin-top: 25px;">Buscar
+				Dados</button>
 		</td>
 	</tr>
 </table>
+
+<div class="table-width">
+
+	<table id="usertable" class="widefat" border="1" border-color="#eee">
+		<thead id="user_header_result">
+		</thead>
+		<tbody id="user_body_result">
+		</tbody>
+	</table>
+
+	<button class="button" id="user_exporttocsv" style="float: right">Exportar dados</button>
+
+</div>
